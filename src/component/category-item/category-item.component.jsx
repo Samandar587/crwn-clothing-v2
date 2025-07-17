@@ -1,9 +1,9 @@
 import "./category.styles.scss";
 
 const CategoryItem = ({ category }) => {
-  const { imageUrl, id, title } = category;
+  const { imageUrl, title } = category;
   return (
-    <div key={id} className="category-container">
+    <div className="category-container">
       <div
         className="background-image"
         style={{
@@ -17,4 +17,5 @@ const CategoryItem = ({ category }) => {
     </div>
   );
 };
+
 export default CategoryItem;
